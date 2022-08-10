@@ -1,4 +1,4 @@
-/* Empiezo con creer un "template" de objeto que guarde la información del proyecto del cliente y con un metodo que calcula cuanto pagarias por los meses que elijas */
+
 let totalAPagar = null;
 
 class proyecto {
