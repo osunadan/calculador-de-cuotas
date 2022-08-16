@@ -1,4 +1,3 @@
-/* Empiezo con creer un "template" de objeto que guarde la información del proyecto del cliente y con un metodo que calcula cuanto pagarias por los meses que elijas */
 let totalAPagar = null;
 
 class proyecto {
@@ -31,11 +30,8 @@ for (proyecto of proyectos) {
   proyecto.pagoCuotas();
 }
 
-alert(
-  "Pagarias " +
-    totalAPagar +
-    " " +
-    "cada mes por los proximos " +
-    proyecto.meses +
-    " meses"
-);
+const titulo = document.querySelector("#resultado h1");
+const subTitulo = document.querySelector("#resultado h2");
+
+titulo.innerText = `Pagarias  ${totalAPagar}`;
+subTitulo.innerText = `Cada mes por los proximos ${proyecto.meses} meses`;
